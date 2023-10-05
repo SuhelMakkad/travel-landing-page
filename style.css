@@ -141,6 +141,11 @@ ol {
   font-size: 0.75rem;
 }
 
+.nav-item a {
+  text-decoration: none;
+  color: currentColor;
+}
+
 .full-section {
   display: flex;
   flex-direction: column;
@@ -170,7 +175,7 @@ ol {
 .main-heading {
   line-height: 1;
   font-family: var(--font-heading);
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   text-align: center;
   text-transform: uppercase;
   color: #4d4d4d;
@@ -183,14 +188,21 @@ ol {
   -webkit-text-fill-color: transparent;
 }
 
+@media (min-width: 768px) {
+  .main-heading {
+    font-size: 4.5rem;
+  }
+}
 .section-content {
   padding: 4rem 0;
 }
 
-.section-content.section-content-row {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
+@media (min-width: 768px) {
+  .section-content.section-content-row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
 }
 
 .section-header {
@@ -278,8 +290,13 @@ ol {
 .footer-content {
   display: flex;
   align-items: center;
+  gap: 1rem;
   justify-content: space-between;
   color: white;
   opacity: 0.5;
   font-size: 0.75rem;
+}
+
+.footer-content p {
+  text-align: end;
 }
