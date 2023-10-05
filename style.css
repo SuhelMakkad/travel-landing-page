@@ -163,6 +163,10 @@ ol {
   object-fit: cover;
 }
 
+.background-image-masked {
+  z-index: 1;
+}
+
 .main-heading {
   line-height: 1;
   font-family: var(--font-heading);
