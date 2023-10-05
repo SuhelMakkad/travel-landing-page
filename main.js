@@ -11,3 +11,21 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 observer.observe(navTracker);
+
+// add event listeners for tab toggle
+const toggleButtons = document.querySelectorAll(".schedule-btn");
+
+toggleButtons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    toggleButtons.forEach((button) => {
+      button.classList.remove("active");
+    });
+
+    button.classList.add("active");
+    const sectionId = e.target.dataset.toggle;
+
+    document.querySelectorAll(".schedule-container").forEach((container) => {
+      container.style.display = container.id === sectionId ? "block" : "none";
+    });
+  });
+});

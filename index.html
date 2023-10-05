@@ -109,8 +109,15 @@
       <section class="full-section" id="climb">
         <img class="background-image" src="./assets/mountain-3.png" />
 
+        <div class="schedule-btns-wrapper">
+          <div class="schedule-btns container">
+            <button data-toggle="schedule-1" class="schedule-btn active">mountain 1</button>
+            <button data-toggle="schedule-2" class="schedule-btn">mountain 2</button>
+          </div>
+        </div>
+
         <div class="container cards-container">
-          <div>
+          <div id="schedule-1" class="schedule-container">
             <div class="card">
               <h3 class="card-header">schedule</h3>
               <ul class="card-list">
@@ -134,7 +141,7 @@
             </div>
           </div>
 
-          <div>
+          <div id="schedule-2" class="schedule-container" style="display: none">
             <div class="card">
               <h3 class="card-header">schedule</h3>
               <ul class="card-list">
