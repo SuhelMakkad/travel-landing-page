@@ -149,6 +149,12 @@ ol {
   isolation: isolate;
 }
 
+#hero-section {
+  display: grid;
+  place-content: center;
+  padding-bottom: 5rem;
+}
+
 .background-image {
   z-index: -1;
   position: absolute;
@@ -158,14 +164,19 @@ ol {
 }
 
 .main-heading {
-  display: grid;
-  place-content: center;
-  padding-bottom: 5rem;
-  height: 100%;
+  line-height: 1;
+  font-family: var(--font-heading);
   font-size: 4.5rem;
   text-align: center;
   text-transform: uppercase;
-  font-family: var(--font-heading);
+  color: #4d4d4d;
+}
+
+.main-heading .highlight {
+  background: -webkit-linear-gradient(hsl(var(--clr-brand-hsl)), hsl(221, 21%, 20%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .section-content {
