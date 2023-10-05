@@ -4,6 +4,163 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Oswald:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- custom script -->
+    <script src="./main.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <nav id="nav" class="nav">
+      <div class="nav-content container">
+        <div class="logo-with-text">
+          <img class="nav-logo" src="./assets/logo.png" />
+          <span class="nav-logo-text">
+            loasangeles <br />
+            mountains
+          </span>
+        </div>
+
+        <ul class="nav-list">
+          <li class="nav-item">01. history</li>
+          <li class="nav-item">02. team</li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section class="full-section" id="main-section">
+        <img class="background-image" src="./assets/mountain-1.png" />
+        <h1 class="main-heading">
+          loasangeles <br />
+          mountains
+        </h1>
+      </section>
+
+      <section class="full-section" id="history">
+        <img class="background-image" src="./assets/mountain-2.png" />
+
+        <div class="section-content container">
+          <header class="section-header">
+            <span class="section-order">01.</span>
+            <h2 class="section-heading">history</h2>
+          </header>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra, rutrum
+            erat rutrum, consectetur mi. Proin at maximus est. Nullam purus ex, iaculis sed erat
+            sed, blandit tincidunt quam. Cras scelerisque id quam sed dignissim Pellentesque urna
+            nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor
+            nec congue.
+          </p>
+        </div>
+
+        <div class="carousel-wrapper">
+          <ul class="carousel container">
+            <li class="carousel-item">
+              <img src="./assets/carousel-1.png" />
+            </li>
+            <li class="carousel-item">
+              <img src="./assets/carousel-2.png" />
+            </li>
+            <li class="carousel-item">
+              <img src="./assets/carousel-1.png" />
+            </li>
+            <li class="carousel-item">
+              <img src="./assets/carousel-2.png" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="container" id="climb">
+        <div class="section-content section-content-row container">
+          <header class="section-header">
+            <span class="section-order">02.</span>
+            <h2 class="section-heading">climb</h2>
+          </header>
+          <p>
+            Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit
+            ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue.
+          </p>
+        </div>
+      </section>
+
+      <section class="full-section" id="climb">
+        <img class="background-image" src="./assets/mountain-3.png" />
+
+        <div class="container cards-container">
+          <div>
+            <div class="card">
+              <h3 class="card-header">schedule</h3>
+              <ul class="card-list">
+                <li class="card-list-item">
+                  <span>25 Nov 2016</span>
+                  <span>Vestibulum viverra</span>
+                </li>
+                <li class="card-list-item">
+                  <span>28 Nov 2016</span>
+                  <span>Vestibulum viverra</span>
+                </li>
+                <li class="card-list-item">
+                  <span>18 Dec 2016</span>
+                  <span>Vestibulum viverra</span>
+                </li>
+                <li class="card-list-item">
+                  <span>07 Jan 2017</span>
+                  <span>Vestibulum viverra</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <div class="card">
+              <h3 class="card-header">schedule</h3>
+              <ul class="card-list">
+                <li class="card-list-item">
+                  <span>25 Nov 2016</span>
+                  <span>temporibus ipsams</span>
+                </li>
+                <li class="card-list-item">
+                  <span>28 Nov 2016</span>
+                  <span>temporibus ipsams</span>
+                </li>
+                <li class="card-list-item">
+                  <span>18 Dec 2016</span>
+                  <span>temporibus ipsams</span>
+                </li>
+                <li class="card-list-item">
+                  <span>07 Jan 2017</span>
+                  <span>temporibus ipsams</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="logo-with-text">
+          <img src="./assets/logo.png" />
+          <span>
+            loasangeles
+            <br />
+            mountains
+          </span>
+        </div>
+        <p>COPYRIGHT 2016. ALL RIGHTS RESERVED.</p>
+      </div>
+    </footer>
+  </body>
 </html>

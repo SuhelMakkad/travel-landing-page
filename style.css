@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --clr-brand-hsl: 220, 24%, 34%;
+
+  --font-logo: "Bebas Neue", sans-serif;
+  --font-heading: "Oswald", sans-serif;
+  --font-content: "Lato", sans-serif;
+}
+
+html,
+body {
+  font-family: var(--font-content);
+}
+
+img {
+  display: block;
+}
+
+ul,
+ol {
+  padding-inline: 0;
+  list-style: none;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+@media (min-width: 960px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+#nav-tracker {
+  width: 100%;
+  height: 1rem;
+  background-color: red;
+  position: absolute;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: white;
+  z-index: 10;
+  box-shadow: none;
+  transition: 200ms ease;
+  transition-property: color, background-color, box-shadow;
+}
+
+.nav.active {
+  background-color: white;
+  color: black;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.nav-logo {
+  transform: scale(0.85);
+  transition: 200ms ease;
+  transition-property: transform;
+}
+
+.nav-logo-text {
+  opacity: 0;
+  transition: 200ms ease;
+  transition-property: opacity;
+}
+
+.nav.active .nav-logo-text {
+  opacity: 1;
+}
+
+.nav.active .nav-logo {
+  transform: scale(1);
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo-with-text {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 1.25rem;
+  font-family: var(--font-logo);
+  line-height: 1;
+}
+
+.nav-list {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-item {
+  border-bottom: 1.5px solid currentColor;
+  padding-bottom: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 0.75rem;
+}
+
+.full-section {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  isolation: isolate;
+}
+
+.background-image {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-heading {
+  display: grid;
+  place-content: center;
+  padding-bottom: 5rem;
+  height: 100%;
+  font-size: 4.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: var(--font-heading);
+}
+
+.section-content {
+  padding: 4rem 0;
+}
+
+.section-content.section-content-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.section-header {
+  position: relative;
+  display: inline-block;
+}
+
+.section-order {
+  font-weight: 800;
+  color: hsl(var(--clr-brand-hsl), 0.5);
+  font-size: 8.5rem;
+  content: attr(data-order);
+  line-height: 1;
+  font-family: var(--font-heading);
+}
+
+.section-heading {
+  position: absolute;
+  left: 80%;
+  top: 45%;
+
+  font-size: 2rem;
+  color: hsl(var(--clr-brand-hsl));
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: var(--font-heading);
+}
+
+.section-content p {
+  font-family: var(--font-content);
+  font-size: 1rem;
+  margin-left: 4.55rem;
+  max-width: 50rem;
+}
+
+.carousel-wrapper {
+  margin-top: auto;
+  background-color: hsl(var(--clr-brand-hsl), 0.8);
+  padding: 1.5rem 0;
+}
+
+.carousel {
+  display: flex;
+  gap: 1rem;
+  overflow: auto;
+}
+
+.cards-container {
+  padding-top: 4rem;
+  width: 100%;
+}
+
+.card {
+  width: max-content;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.card-header {
+  font-size: 2rem;
+  color: hsl(var(--clr-brand-hsl));
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: var(--font-heading);
+}
+
+.card-list {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card-list-item {
+  display: flex;
+  gap: 2rem;
+  text-transform: capitalize;
+}
+
+.footer {
+  background-color: hsl(var(--clr-brand-hsl));
+  padding: 1rem 0;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  opacity: 0.5;
+  font-size: 0.75rem;
+}
