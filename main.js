@@ -12,6 +12,12 @@ const observer = new IntersectionObserver((entries) => {
 });
 observer.observe(navTracker);
 
+// parallax effect for hero heading
+const heroHeading = document.getElementById("hero-heading");
+window.addEventListener("scroll", () => {
+  heroHeading.style.transform = `translateY(${window.scrollY / 4}px)`;
+});
+
 // add event listeners for tab toggle
 const toggleButtons = document.querySelectorAll(".schedule-btn");
 

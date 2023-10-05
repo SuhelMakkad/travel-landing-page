@@ -180,6 +180,7 @@ ol {
   text-align: center;
   text-transform: uppercase;
   color: #4d4d4d;
+  /* transition: transform 200ms ease; */
 }
 
 .main-heading .highlight {
